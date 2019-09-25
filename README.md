@@ -1,7 +1,7 @@
 # trivia
 A trivia game.
 
-#Installing Instructions
+# Installing Instructions
 
 Download the source.
 
