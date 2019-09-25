@@ -15,6 +15,10 @@
 		D5182EA323351BB900F0ECFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5182EA123351BB900F0ECFC /* LaunchScreen.storyboard */; };
 		D5182EAE23351BB900F0ECFC /* triviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182EAD23351BB900F0ECFC /* triviaTests.swift */; };
 		D5182EB923351BB900F0ECFC /* triviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182EB823351BB900F0ECFC /* triviaUITests.swift */; };
+		D5182EC7233556E500F0ECFC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182EC6233556E500F0ECFC /* NetworkManager.swift */; };
+		D55ED19D23394BC600B1C1D2 /* DecodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED19C23394BC600B1C1D2 /* DecodingManager.swift */; };
+		D55ED1A123395D4000B1C1D2 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED1A023395D4000B1C1D2 /* ScoresViewController.swift */; };
+		D5EC554F2337BD0800977A4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC554E2337BD0800977A4C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D5182EB423351BB900F0ECFC /* triviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = triviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5182EB823351BB900F0ECFC /* triviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaUITests.swift; sourceTree = "<group>"; };
 		D5182EBA23351BB900F0ECFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5182EC6233556E500F0ECFC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D55ED19C23394BC600B1C1D2 /* DecodingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingManager.swift; sourceTree = "<group>"; };
+		D55ED1A023395D4000B1C1D2 /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
+		D5EC554E2337BD0800977A4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				D5182EA123351BB900F0ECFC /* LaunchScreen.storyboard */,
 				D5182EA423351BB900F0ECFC /* Info.plist */,
 				D5182E9C23351BB700F0ECFC /* trivia.xcdatamodeld */,
+				D5182EC6233556E500F0ECFC /* NetworkManager.swift */,
+				D5EC554E2337BD0800977A4C /* LoginViewController.swift */,
+				D55ED19C23394BC600B1C1D2 /* DecodingManager.swift */,
+				D55ED1A023395D4000B1C1D2 /* ScoresViewController.swift */,
 			);
 			path = trivia;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55ED19D23394BC600B1C1D2 /* DecodingManager.swift in Sources */,
+				D5182EC7233556E500F0ECFC /* NetworkManager.swift in Sources */,
+				D55ED1A123395D4000B1C1D2 /* ScoresViewController.swift in Sources */,
 				D5182E9E23351BB700F0ECFC /* trivia.xcdatamodeld in Sources */,
 				D5182E9823351BB700F0ECFC /* ViewController.swift in Sources */,
+				D5EC554F2337BD0800977A4C /* LoginViewController.swift in Sources */,
 				D5182E9623351BB700F0ECFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,13 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V39Y87UUV4;
+				DEVELOPMENT_TEAM = H4UJ4PQ6L8;
 				INFOPLIST_FILE = trivia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gerard.trivia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerard.triviaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,13 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V39Y87UUV4;
+				DEVELOPMENT_TEAM = H4UJ4PQ6L8;
 				INFOPLIST_FILE = trivia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gerard.trivia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerard.triviaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
