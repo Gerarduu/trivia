@@ -203,7 +203,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
     func getData() {
         
-        NetworkManager.downloadData { jsonData in
+       NetworkManager.downloadData { jsonData in
             guard let jData = jsonData else { return }
         
             do {

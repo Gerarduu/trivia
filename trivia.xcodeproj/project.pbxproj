@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D5182E9623351BB700F0ECFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182E9523351BB700F0ECFC /* AppDelegate.swift */; };
-		D5182E9823351BB700F0ECFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182E9723351BB700F0ECFC /* ViewController.swift */; };
 		D5182E9B23351BB700F0ECFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5182E9923351BB700F0ECFC /* Main.storyboard */; };
 		D5182E9E23351BB700F0ECFC /* trivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5182E9C23351BB700F0ECFC /* trivia.xcdatamodeld */; };
 		D5182EA023351BB900F0ECFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5182E9F23351BB900F0ECFC /* Assets.xcassets */; };
 		D5182EA323351BB900F0ECFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5182EA123351BB900F0ECFC /* LaunchScreen.storyboard */; };
 		D5182EAE23351BB900F0ECFC /* triviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182EAD23351BB900F0ECFC /* triviaTests.swift */; };
 		D5182EB923351BB900F0ECFC /* triviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182EB823351BB900F0ECFC /* triviaUITests.swift */; };
-		D5182EC7233556E500F0ECFC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182EC6233556E500F0ECFC /* NetworkManager.swift */; };
-		D55ED19D23394BC600B1C1D2 /* DecodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED19C23394BC600B1C1D2 /* DecodingManager.swift */; };
-		D55ED1A123395D4000B1C1D2 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55ED1A023395D4000B1C1D2 /* ScoresViewController.swift */; };
-		D5EC554F2337BD0800977A4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC554E2337BD0800977A4C /* LoginViewController.swift */; };
+		D5C601D2233C04100088BF8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C601D1233C04100088BF8C /* ViewController.swift */; };
+		D5C601D4233C04860088BF8C /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C601D3233C04860088BF8C /* String+HTML.swift */; };
+		D5DE2C12233D21F5007D591A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE2C11233D21F5007D591A /* LoginViewController.swift */; };
+		D5DE2C14233D27DD007D591A /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE2C13233D27DD007D591A /* ScoresViewController.swift */; };
+		D5DE2C16233D2C1E007D591A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE2C15233D2C1E007D591A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		D5182E9223351BB700F0ECFC /* trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5182E9523351BB700F0ECFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5182E9723351BB700F0ECFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5182E9A23351BB700F0ECFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5182E9D23351BB700F0ECFC /* trivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = trivia.xcdatamodel; sourceTree = "<group>"; };
 		D5182E9F23351BB900F0ECFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,10 +52,11 @@
 		D5182EB423351BB900F0ECFC /* triviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = triviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5182EB823351BB900F0ECFC /* triviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaUITests.swift; sourceTree = "<group>"; };
 		D5182EBA23351BB900F0ECFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5182EC6233556E500F0ECFC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		D55ED19C23394BC600B1C1D2 /* DecodingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingManager.swift; sourceTree = "<group>"; };
-		D55ED1A023395D4000B1C1D2 /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
-		D5EC554E2337BD0800977A4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D5C601D1233C04100088BF8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5C601D3233C04860088BF8C /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		D5DE2C11233D21F5007D591A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D5DE2C13233D27DD007D591A /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
+		D5DE2C15233D2C1E007D591A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				D5182E9523351BB700F0ECFC /* AppDelegate.swift */,
-				D5182E9723351BB700F0ECFC /* ViewController.swift */,
 				D5182E9923351BB700F0ECFC /* Main.storyboard */,
 				D5182E9F23351BB900F0ECFC /* Assets.xcassets */,
 				D5182EA123351BB900F0ECFC /* LaunchScreen.storyboard */,
 				D5182EA423351BB900F0ECFC /* Info.plist */,
 				D5182E9C23351BB700F0ECFC /* trivia.xcdatamodeld */,
-				D5182EC6233556E500F0ECFC /* NetworkManager.swift */,
-				D5EC554E2337BD0800977A4C /* LoginViewController.swift */,
-				D55ED19C23394BC600B1C1D2 /* DecodingManager.swift */,
-				D55ED1A023395D4000B1C1D2 /* ScoresViewController.swift */,
+				D5C601D1233C04100088BF8C /* ViewController.swift */,
+				D5C601D3233C04860088BF8C /* String+HTML.swift */,
+				D5DE2C11233D21F5007D591A /* LoginViewController.swift */,
+				D5DE2C13233D27DD007D591A /* ScoresViewController.swift */,
+				D5DE2C15233D2C1E007D591A /* NetworkManager.swift */,
 			);
 			path = trivia;
 			sourceTree = "<group>";
@@ -271,12 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55ED19D23394BC600B1C1D2 /* DecodingManager.swift in Sources */,
-				D5182EC7233556E500F0ECFC /* NetworkManager.swift in Sources */,
-				D55ED1A123395D4000B1C1D2 /* ScoresViewController.swift in Sources */,
+				D5DE2C12233D21F5007D591A /* LoginViewController.swift in Sources */,
+				D5DE2C14233D27DD007D591A /* ScoresViewController.swift in Sources */,
+				D5C601D4233C04860088BF8C /* String+HTML.swift in Sources */,
+				D5DE2C16233D2C1E007D591A /* NetworkManager.swift in Sources */,
 				D5182E9E23351BB700F0ECFC /* trivia.xcdatamodeld in Sources */,
-				D5182E9823351BB700F0ECFC /* ViewController.swift in Sources */,
-				D5EC554F2337BD0800977A4C /* LoginViewController.swift in Sources */,
+				D5C601D2233C04100088BF8C /* ViewController.swift in Sources */,
 				D5182E9623351BB700F0ECFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
