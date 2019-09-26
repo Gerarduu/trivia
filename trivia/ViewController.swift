@@ -252,7 +252,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         for button in answerBtns {
             
             button.layer.cornerRadius = 10
-            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15.0)
+            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12.0)
         }
     }
     

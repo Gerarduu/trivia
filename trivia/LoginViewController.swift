@@ -8,9 +8,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var playerNameDesc: UILabel!
     @IBOutlet weak var playerNameText: UITextField!
-    
+    @IBOutlet weak var nextBtn: UIButton!
     @IBAction func scoresBtnPressed(_ sender: Any) {
         
+        playerNameText.resignFirstResponder()
         performSegue(withIdentifier: "scoresViewController", sender: nil)
     }
     
@@ -37,6 +38,7 @@ class LoginViewController: UIViewController {
                 playerNameText.text = ""
                 turn=0
                 
+                playerNameText.resignFirstResponder()
                 performSegue(withIdentifier: "triviaViewController", sender: nil)
             }
         }
@@ -56,5 +58,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextBtn.layer.cornerRadius = 5
+        
+        //Hide keyboard when tapping outside
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    
+    @objc func dismissKeyboard() {
+    
+        view.endEditing(true)
     }
 }
