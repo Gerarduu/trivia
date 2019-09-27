@@ -206,9 +206,11 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
     func getData() {
         
-       NetworkManager.downloadData { jsonData in
-            guard let jData = jsonData else { return }
+        showLoading()
         
+        NetworkManager.downloadData { jsonData in
+            guard let jData = jsonData else { return }
+
             do {
                 
                 if let json = try JSONSerialization.jsonObject(with: jData, options: JSONSerialization.ReadingOptions.allowFragments) as? [String: Any] {
@@ -237,7 +239,6 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         player1NameText.text = self.player1.name
         player2NameText.text = self.player2.name
         
-        showLoading()
         setUpScreen()
         getData()
         
