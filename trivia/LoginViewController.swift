@@ -60,7 +60,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         nextBtn.layer.cornerRadius = 5
-        
+        nextBtn.layer.borderWidth = 1
+        nextBtn.layer.borderColor = UIColor.black.cgColor
         //Hide keyboard when tapping outside
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)

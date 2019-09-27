@@ -264,10 +264,6 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         activityIndicator.startAnimating()
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
-    
     func setUpScreen() {
         
         questionText.font = UIFont.systemFont(ofSize: 18.0)
