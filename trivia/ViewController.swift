@@ -224,7 +224,6 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
                         self.setUp()
                         self.activityIndicator.stopAnimating()
                         self.aView.removeFromSuperview()
-
                     }
                 }
             
@@ -244,18 +243,17 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         
         setUpScreen()
         getData()
-        
     }
     
     func showLoading() {
         
-        print("showing loading")
-        
         aView = UIView(frame: self.view.bounds)
         
-        aView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        aView.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         
         activityIndicator.center = aView.center
+        
+        activityIndicator.color = .black
         
         activityIndicator.hidesWhenStopped = true
         
@@ -272,7 +270,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
     func setUpScreen() {
         
-        questionText.font = UIFont.boldSystemFont(ofSize: 18.0)
+        questionText.font = UIFont.systemFont(ofSize: 18.0)
         actualPlayerText.font = UIFont.boldSystemFont(ofSize: 18.0)
         player1NameText.font = UIFont.boldSystemFont(ofSize: 15.0)
         player2NameText.font = UIFont.boldSystemFont(ofSize: 15.0)
