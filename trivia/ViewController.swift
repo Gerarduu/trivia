@@ -24,6 +24,9 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
     @IBOutlet weak var actualPlayerText: UILabel!
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet var answerBtns: [UIButton]!
+    
+    let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+    var aView = UIView()
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -214,6 +217,9 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
                         
                         self.questions = questionsTemp
                         self.setUp()
+                        self.activityIndicator.stopAnimating()
+                        self.aView.removeFromSuperview()
+
                     }
                 }
             
@@ -230,10 +236,30 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         
         player1NameText.text = self.player1.name
         player2NameText.text = self.player2.name
-        self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false;
         
+        showLoading()
         setUpScreen()
         getData()
+        
+    }
+    
+    func showLoading() {
+        
+        print("showing loading")
+        
+        aView = UIView(frame: self.view.bounds)
+        
+        aView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        
+        activityIndicator.center = aView.center
+        
+        activityIndicator.hidesWhenStopped = true
+        
+        aView.addSubview(activityIndicator)
+        
+        self.view.addSubview(aView)
+        
+        activityIndicator.startAnimating()
     }
     
     override open var shouldAutorotate: Bool {

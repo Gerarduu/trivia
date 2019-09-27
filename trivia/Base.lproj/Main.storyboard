@@ -82,7 +82,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cjf-nE-5W7">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="nX4-ph-WtX">
+                        <barButtonItem key="rightBarButtonItem" title="Games" style="plain" id="nX4-ph-WtX">
                             <connections>
                                 <action selector="scoresBtnPressed:" destination="BYZ-38-t0r" id="cCt-k0-Iou"/>
                             </connections>
@@ -276,10 +276,10 @@
             </objects>
             <point key="canvasLocation" x="915" y="433"/>
         </scene>
-        <!--Scores-->
+        <!--Games-->
         <scene sceneID="CNK-Ne-rUA">
             <objects>
-                <tableViewController title="Scores" id="PiZ-mv-qNQ" customClass="ScoresViewController" customModule="trivia" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Games" id="PiZ-mv-qNQ" customClass="ScoresViewController" customModule="trivia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bDq-Nz-koh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

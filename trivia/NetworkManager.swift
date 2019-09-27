@@ -8,8 +8,6 @@
 
 import Foundation
 
-var dataAsString = ""
-
 class NetworkManager {
     
     static func downloadData(completion:@escaping ((_ json: Data?) -> Void)) {
@@ -27,7 +25,7 @@ class NetworkManager {
                 
                 if let urlContent = data {
                     
-                    dataAsString = String(data: urlContent, encoding: .utf8)!
+                    let dataAsString = String(data: urlContent, encoding: .utf8)!
                     
                     let decodedString = dataAsString.decodingHTMLEntities()
                     
