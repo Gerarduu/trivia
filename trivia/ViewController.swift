@@ -234,9 +234,9 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         
-        super.viewDidAppear(animated)
+        super.viewDidLoad()
         
         player1NameText.text = self.player1.name
         player2NameText.text = self.player2.name
