@@ -67,6 +67,9 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         
         let newGame = Game(context: context)
         
+        print("\(player1.score)")
+        print("\(player2.score)")
+        
         newGame.player1Stats = player1.name + " " + String(player1.score)
         newGame.player2Stats = player2.name + " " + String(player2.score)
         
@@ -103,11 +106,11 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
             })
         }
         
+        setCoreData()
+        
         turn = 0
         player1.score = 0
         player2.score = 0
-        
-        setCoreData()
     }
     
     func setUp () {
