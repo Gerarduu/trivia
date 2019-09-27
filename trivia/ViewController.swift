@@ -274,8 +274,8 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         actualPlayerText.font = UIFont.boldSystemFont(ofSize: 18.0)
         player1NameText.font = UIFont.boldSystemFont(ofSize: 15.0)
         player2NameText.font = UIFont.boldSystemFont(ofSize: 15.0)
-        player1ScoreText.font = UIFont.boldSystemFont(ofSize: 15.0)
-        player2ScoreText.font = UIFont.boldSystemFont(ofSize: 15.0)
+        player1ScoreText.font = UIFont.systemFont(ofSize: 15.0)
+        player2ScoreText.font = UIFont.systemFont(ofSize: 15.0)
         
         for button in answerBtns {
             
